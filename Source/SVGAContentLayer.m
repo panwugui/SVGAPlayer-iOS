@@ -118,6 +118,9 @@
 }
 
 - (void)resetTextLayerProperties:(NSAttributedString *)attributedString {
+    if (attributedString.length <= 0) {
+        return;
+    }
     NSDictionary *textAttrs = (id)[attributedString attributesAtIndex:0 effectiveRange:nil];
     NSParagraphStyle *paragraphStyle = textAttrs[NSParagraphStyleAttributeName];
     if (paragraphStyle == nil) {
