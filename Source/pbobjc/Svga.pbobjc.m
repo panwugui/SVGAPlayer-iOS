@@ -12,7 +12,7 @@
 #else
 #import "GPBProtocolBuffers_RuntimeSupport.h"
 #endif
-
+#import <libkern/OSAtomic.h>
 #import "Svga.pbobjc.h"
 // @@protoc_insertion_point(imports)
 
